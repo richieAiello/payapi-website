@@ -52,12 +52,12 @@ font-family: 'Public Sans', sans-serif; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .active {
   text-decoration: 2px underline;
   text-underline-offset: 0.25rem;
-  color: #36536b;
 }
 
 .ninja {
@@ -133,5 +133,24 @@ font-family: 'Public Sans', sans-serif; */
     font-size: 3.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.43px;
+  }
+}
+
+/****************************************
+  Links
+****************************************/
+.link {
+  transition: 250ms;
+}
+
+.link--nav:hover,
+.link--nav:focus {
+  color: rgba(251, 252, 254, 1);
+}
+
+@media (min-width: 768px) {
+  .link--nav:hover,
+  .link--nav:focus {
+    color: rgba(54, 83, 107, 1);
   }
 }
